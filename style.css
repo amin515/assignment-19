@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    left: 0;
+}
+
+  .ful-web{
+    width: 900px;
+    height: 750px;
+    margin: 0 auto;
+    background: #ddd;
+  }
+  
+  
+  ul {
+      text-align: center;
+      background: #ddd;
+      list-style-type: none;
+    }
+    li {
+      display: inline-block;
+      padding: 5px 20px;
+      
+    }
+    a {
+      text-decoration: none;
+      color:#fff;
+      font-size: 25px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     width: 80px;
+      display: inline-block;
+      padding: 10px;
+      background:#48dbfb;
+      position: relative;
+    }
+
+    .header-menu li a::after{
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: red;
+
+      transition: .3s;
+    }
+    .header-menu li a:hover::after{
+      width: 100%;
+      transition: .3s;
+    }
+    .header-menu a:hover{
+       background: #ddd;
+       color: black;
+    } 
+
+  .contain{
+      text-align: center;
+      background: #43cae8;
+      padding: 60px;
+  }
+
+
+  /*button*/
+.button{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.click.me {
+  text-decoration: none;
+  font-size: 20px;
+  background: #dcaaf0;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+
+.click.me::before{
+  content: "";
+  height: 100%;
+  width: 0%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:#000;
+  border-radius: 8px;
+  transition: .5s;
+  z-index: -1;
+
+}
+
+.click.me:hover.click.me::before{
+  width: 100%;
+ 
+}
+
+.aa{
+  text-align: center;
+  font-family: bold;
+  margin-top: 60px;
+  color: #ddd;
+}
+
+.bb{
+  margin-top: 40px;
+  font-size: 30px;
+  color: #ddd;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 80px;
+}
+.middle-footer{
+  margin-left: 20px;
+   margin-top: 20px;
+   padding: 20px;
+   display: inline-block;
+  color: #fff;
+   text-align: center;
+}
+
+
+
+
+.step1{
+  height: 60px;
+  width: 60px;
+  background: rgb(10, 10, 10);
+  display: inline-block;
+  cursor: pointer;
+} 
+.step2{
+  height: 60px;
+  width: 60px;
+  background: rgb(14, 13, 13);
+  display: inline-block;
+  margin-right: 80px;
+  margin-left: 80px;
+  
+  cursor: pointer;
+}
+.step3{
+  height: 60px;
+  width: 60px;
+  background: rgb(13, 14, 13);
+  display: inline-block;
+  cursor: pointer;
+}
+
+.step1{
+  transform: rotate(40deg);
+}
+.step1:hover{
+  transform: rotate(0deg);
+  transition: .5s;
+}
+
+.step2{
+  transform: scale(1.1);
+}
+.step2:hover{
+  transform: scale(.4);
+  transition: .5s;
+}
+
+.step3{
+  transform: rotate(-40deg);
+}
+.step3:hover{
+  transform: rotate(0deg);
+  transition: .5s;
+}
+
+.bottom-foter{
+  background: #2e2f31;
+  color: #ddd;
+  padding: 18px;
+  margin-top: 0px;
+}
